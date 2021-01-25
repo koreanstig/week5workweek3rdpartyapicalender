@@ -1,0 +1,22 @@
+{
+  "name": "week5workweek3rdpartyapicalender",
+  "version": "1.0.0",
+  "description": "Using nodes and 3rd party API to create calendar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koreanstig/week5workweek3rdpartyapicalender.git"
+  },
+  "author": "David Jung Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koreanstig/week5workweek3rdpartyapicalender/issues"
+  },
+  "homepage": "https://github.com/koreanstig/week5workweek3rdpartyapicalender#readme",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}
