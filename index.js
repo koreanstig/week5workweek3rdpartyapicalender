@@ -1,3 +1,4 @@
+// the var below allows for the current day to be displayed
 var dayAndYear = $("#currentDay").text(moment().format('MMMM Do YYYY'));
 var hour = moment().format('HH');
 var num = $(".num");
