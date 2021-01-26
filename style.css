@@ -78,7 +78,7 @@ textarea{
 i {
   font-size: 2rem;
   margin-left: 1rem;
-  margin-top: .5rem;
+  margin-top: 1.5rem;
   cursor:pointer;
 }
 
@@ -86,4 +86,13 @@ i {
 .form-control {
   background-color: lightgray;
   text-decoration-color: black;
+  margin-top: 1rem;
+}
+
+.num {
+  text-align: right;
+}
+
+.ampm {
+  text-align: left;
 }
