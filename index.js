@@ -1,30 +1,40 @@
-var dayandtime = $("#currentDay").text(moment().format('MMMM Do YYYY'));
-var hour = moment().format('h');
-console.log(hour);
+var dayAndYear = $("#currentDay").text(moment().format('MMMM Do YYYY'));
+var hour = moment().format('HH');
+var num = $(".num");
+var eventInput = $(".eventInput");
+var enterButton = $(".enter-button");
 
-if (hour ===){};
 
-
-
-// var descriptionFromStorage = JSON.parse(localStorage.getItem("text"));
-// if (!descriptionFromStorage){
-//     descriptionFromStorage = [];
+// for (i=0; i<num.length; i++){
+//     if (hour == num[i]){
+//         console.log(num[i]);
+//         eventInput.css("background-color", "red");
+//     } else if (hour > num[i]){
+//         eventInput.css("background-color", "lightgray");
+//     } else {
+//         eventInput.css("background-color", "lightgreen");
+//     }
 // }
-// for (var i = 0; i < descriptionFromStorage.length; i++){
-//     var paragraph = document.createElement("p");
-//     paragraph.innerText = scoresFromStorage[i].name + "'s score is " + scoresFromStorage[i].score;
-//     document.body.appendChild(paragraph);
-// }
-// var storeButton = document.getElementById("store");
-// var DescInput =  $(".description");
-// var scoreInput =  $(".btn");
-// storeButton.addEventListener("click", function(){
-//     var name = nameInput.value;
-//     var score = scoreInput.value;
-//     var newLocalStorageEntry = {
-//         name: name,
-//         score: score
-//     };
-//     descriptionFromStorage.push(newLocalStorageEntry);
-//     localStorage.setItem("text", JSON.stringify(descriptionFromStorage));
-// })
+
+// function renderLastRegistered() {
+//     var input = localStorage.getItem("input");
+//     if (!input) {
+//       return;
+//     }
+//     eventInput.textContent = input;
+//   }
+
+// enterButton.click(function(event){
+//     event.preventDefault();
+//     var input = $("eventInput").value;
+//     localStorage.setItem("input", input);
+//     renderLastRegistered();
+// });
+
+// $('body').click(function(event){
+//     if (event.target.parentElement.classList.contains("add-item")){
+//         console.log("Click")
+//         $('input').value = 'Hello';
+//         console.log($('input'));
+//     }
+// });
