@@ -70,6 +70,20 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
-.9 {
-  background-color: red;
+.col-2 {
+  text-align: center;
+}
+
+/* added styling to icon */
+i {
+  font-size: 2rem;
+  margin-left: 1rem;
+  margin-top: .5rem;
+  cursor:pointer;
+}
+
+/* added styling to input box  */
+.form-control {
+  background-color: lightgray;
+  text-decoration-color: black;
 }

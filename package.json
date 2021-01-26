@@ -18,5 +18,6 @@
   "homepage": "https://github.com/koreanstig/week5workweek3rdpartyapicalender#readme",
   "dependencies": {
     "moment": "^2.29.1"
-  }
+  },
+  "devDependencies": {}
 }
