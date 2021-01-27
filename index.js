@@ -24,8 +24,7 @@ enterButton.click(function(event){
     var button = $(this);
     var key = button.parent().parent().parent().attr("id");
     console.log(key);
-    // var value = eventInput.value
-    var value = button.parent().parent().parent().children('input').attr('value');
+    var value = button.parent().parent().parent().children('input').val();
     console.log(value); 
     localStorage.setItem("key", key);
     localStorage.setItem("value", value);
