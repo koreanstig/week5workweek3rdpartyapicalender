@@ -17,8 +17,6 @@ function renderInput(){
     } else {
         eventInput.value = input;
     }
-    // console.log(input);
-    // console.log(eventInput);
 }
 $('body').click(function(event){
     if (event.target.parentElement.classList.contains("add-item")){
