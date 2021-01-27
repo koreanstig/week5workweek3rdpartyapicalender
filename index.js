@@ -6,16 +6,26 @@ var num = $(".num");
 var eventInput = document.querySelector(".eventInput");
 var enterButton = $(".enter-button");
 
+// creating an array to save multiple in localstorage
+var inputs = [];
+
 // call function that will keep input on page upon refresh
 renderInput();
 
 // function for keeping input into localstorage and keeping it there when refreshing page
 function renderInput(){
+    var key = localStorage.getItem('key');
     var value = localStorage.getItem("value");
     if (!value){
         return;
     } else {
-        eventInput.value = value;
+        for (i=0;i<key.length;i++){
+            if (i+"am" == key){
+                eventInput.value = value;
+            } else if (i+"pm" == key){
+                eventInput.value = value;
+            }
+        }
     }
 }
 // new code for localStorage
