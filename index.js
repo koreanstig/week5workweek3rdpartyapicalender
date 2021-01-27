@@ -24,13 +24,13 @@ enterButton.click(function(event){
     var button = $(this);
     var key = button.parent().parent().parent().attr("id");
     console.log(key);
-    var value = eventInput.value;
-    console.log(value);
+    // var value = eventInput.value
+    var value = button.parent().parent().parent().children('input').attr('value');
+    console.log(value); 
     localStorage.setItem("key", key);
     localStorage.setItem("value", value);
     renderInput();
 })
-
 
 // code for color change on inputs
 // for (i=0; i<num.length; i++){
