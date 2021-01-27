@@ -11,32 +11,26 @@ renderInput();
 
 // function for keeping input into localstorage and keeping it there when refreshing page
 function renderInput(){
-    var input = localStorage.getItem("input");
-    if (!input){
+    var value = localStorage.getItem("value");
+    if (!value){
         return;
     } else {
-        eventInput.value = input;
+        eventInput.value = value;
     }
 }
-$('body').click(function(event){
-    if (event.target.parentElement.classList.contains("add-item")){
-        // prevent default up top to prevent dom from doing what it normally does
-        event.preventDefault();
-        var input = eventInput.value;
-        console.log(input);
-        localStorage.setItem("input", input);
-        renderInput();
-    }
-});
 // new code for localStorage
-// enterButton.click(function(event){
-//     var button = $(this);
-//     var key = button.parent().parent().parent().attr("id");
-//     console.log(key);
-//     var value = button.parent().parent().parent().children().attr('value');
-//     console.log(value);
-//     console.log(event);
-// })
+enterButton.click(function(event){
+    event.preventDefault();
+    var button = $(this);
+    var key = button.parent().parent().parent().attr("id");
+    console.log(key);
+    var value = eventInput.value;
+    console.log(value);
+    localStorage.setItem("key", key);
+    localStorage.setItem("value", value);
+    renderInput();
+})
+
 
 // code for color change on inputs
 // for (i=0; i<num.length; i++){
