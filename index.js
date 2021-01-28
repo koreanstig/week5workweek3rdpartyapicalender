@@ -5,6 +5,9 @@ var hour = moment().format('HH');
 // the below variable is to select the button
 var enterButton = $(".enter-button");
 
+// creating an array that will assist in color change
+var daysArr = [9, 10, 11, 12, 13, 14, 15, 16, 17];
+
 // call function that will keep input via localstorage on page upon refresh
 renderInput();
 
@@ -32,7 +35,17 @@ enterButton.click(function(event){
 
 // code for color change on inputs
 function timeColorChange(){
-
+    for (i=0; i<daysArr.length;i++) {
+        if (daysArr[i] > hour) {
+        $("#" + daysArr[i]).addClass("future");
+        }
+        else if (parseInt(daysArr[i]) < hour) {
+        $("#" + daysArr[i]).addClass("past");
+        }
+        else if (parseInt(daysArr[i]) == hour) {
+        $("#" + daysArr[i]).addClass("present");
+        }
+    } 
 }
 
 timeColorChange();
