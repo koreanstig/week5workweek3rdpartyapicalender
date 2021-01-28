@@ -1,15 +1,14 @@
 // the var below allows for the current day to be displayed
 var dayAndYear = $("#currentDay").text(moment().format('MMMM Do YYYY'));
+// this var is for the color change
 var hour = moment().format('HH');
-var num = $(".num");
-// the below variable is to select the input and button
-var eventInput = document.querySelector(".eventInput");
+// the below variable is to select the button
 var enterButton = $(".enter-button");
 
-// call function that will keep input on page upon refresh
+// call function that will keep input via localstorage on page upon refresh
 renderInput();
 
-// function for keeping input into localstorage and keeping it there when refreshing page
+// function for pulling input from localstorage and inputing into value
 function renderInput() {
     $("#9am").children("input").val(localStorage.getItem("9am"));
     $("#10am").children("input").val(localStorage.getItem("10am"));
